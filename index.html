@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Community Problem Solver</title>
+</head>
+
+<body>
+
+    <h1>AI Community Problem Solver</h1>
+
+    <p>
+        Enter a community problem and let AI analyze it
+        and suggest practical solutions.
+    </p>
+
+    <form method="POST">
+
+        <label for="problem">
+            Community Problem:
+        </label>
+
+        <br><br>
+
+        <textarea
+            id="problem"
+            name="problem"
+            rows="6"
+            cols="60"
+            placeholder="Example: Youth unemployment is increasing in my community"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">
+            Solve Problem
+        </button>
+
+    </form>
+
+    {% if result %}
+
+        <hr>
+
+        <h2>AI Community Problem Analysis</h2>
+
+        <pre>{{ result }}</pre>
+
+    {% endif %}
+
+</body>
+</html>

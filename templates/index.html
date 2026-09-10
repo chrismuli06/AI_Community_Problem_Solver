@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Community Problem Solver</title>
+</head>
+<body>
+    <h1 style='color: #1f3c88; text-align: center;'>AI Community Problem Solver</h1>
+
+    <p>Enter a community problem and let AI analyze it and suggest practical solutions.</p>
+
+    <form method="POST">
+        <label for="problem">Community Problem:</label>
+        <br><br>
+
+        <textarea id="problem" name="problem" rows="6" cols="80"
+        placeholder="Example: Youth unemployment is increasing in my community"
+        required></textarea>
+
+        <br><br>
+
+        <button type="submit" style='background-color: #1f3c88; color: white; padding: 12px 25px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;'>Solve Problem</button>
+    </form>
+
+    {% if result %}
+        <hr>
+        <h2>AI Community Problem Analysis</h2>
+        <pre style='background-color: #f4f7fb; padding: 20px; border-left: 5px solid #1f3c88; border-radius: 6px; white-space: pre-wrap; line-height: 1.6;'>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>
+
+
+
+

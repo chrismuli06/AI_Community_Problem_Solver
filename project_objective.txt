@@ -1,0 +1,26 @@
+AI Community Problem-Solving Assistant
+
+Problem:
+Community members often face problems but may not know how to analyze the causes, effects, possible solutions, and practical actions.
+
+Objective:
+To develop an AI-powered assistant that uses prompt engineering and a Large Language Model (LLM) to analyze community problems and generate practical, structured solutions and action plans.
+
+Target Users:
+Community members, students, youth groups, and community organizations.
+
+Main Tasks:
+1. Identify possible causes of a community problem.
+2. Identify effects on the community.
+3. Generate practical solutions.
+4. Recommend the best solution and explain why.
+5. Create a 30-day action plan.
+6. Consider affordable and realistic actions suitable for a local community.
+
+Technologies:
+Python
+Flask
+OpenAI API
+HTML
+CSS
+Prompt Engineering
